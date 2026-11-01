@@ -1,31 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    
 
-    <div id="Button">
+    <header id="Button">
         <button class="mainButton">Услуги</button>
         <button class="mainButton">Портфолио</button>
         <button class="mainButton">Связь</button>
-    </div>
+    </header>
 
-    <div id="background"></div>
+    <main class="layout">
 
-    <div>
-        <div id="CardFon"></div>
-        <span id="Card">Активация <span style="color: blue;">Gram-Карты</span> Telegram</span>
-        <img src="img/Card.jpg" alt="Card" id="CardPng">
-        <span id="CardPrice">Цена: <span style="color: blue; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">0.20 gram</span></span>
-        <span id="Combek"> <span style="color: blue;">0.1</span> gram вам вернутся</span>
+        <section class="column column-left">
 
-        <div>Зачем?</div>
-    </div>
+            <article class="card card-white reveal">
+                <span class="card-title">Активация <span class="blue">Gram-Карты</span> Telegram</span>
+                <img src="img/Card.jpg" alt="Card" class="card-img img-left" id="CardImg">
+                <span class="card-price">Цена: <span class="blue gill">0.20 gram</span></span>
+                <span class="card-note"><span class="blue">0.1</span> gram вам вернутся</span>
+            </article>
+
+            <article class="card card-white reveal">
+                <span class="card-title"><span class="blue">Бот</span>-Рассылка по чатам</span>
+                <img src="img/Bot.jpg" alt="Bot" class="card-img img-left">
+                <span class="card-price">Цена: <span class="blue gill">0.4 usdt/час</span></span>
+                <span class="card-note">Автоматика</span>
+            </article>
+
+        </section>
+
+        <section class="column column-right">
+
+            <article class="card card-gray reveal">
+                <span class="card-title">Создание веб-сайтов <span class="blue">Frontend</span></span>
+                <img src="img/Laptop.jpg" alt="Laptop" class="card-img img-right">
+                <span class="card-price">Цена: <span class="blue">обговорим</span></span>
+                <span class="card-note">От <span class="blue">400-4000</span> руб/$/Gram</span>
+            </article>
+
+        </section>
+
+    </main>
 
     <script src="script.js"></script>
 </body>

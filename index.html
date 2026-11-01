@@ -10,43 +10,95 @@
 <body>
 
     <header id="Button">
-        <button class="mainButton">Услуги</button>
-        <button class="mainButton">Портфолио</button>
-        <button class="mainButton">Связь</button>
+        <button class="mainButton active" data-target="services">Услуги</button>
+        <button class="mainButton" data-target="portfolio">Портфолио</button>
+        <button class="mainButton" data-target="contact">Связь</button>
     </header>
 
-    <main class="layout">
+    <main class="layout" id="services">
 
         <section class="column column-left">
 
-            <article class="card card-white reveal">
+            <a class="card card-white reveal" href="https://t.me/MoneysXab" target="_blank" rel="noopener">
                 <span class="card-title">Активация <span class="blue">Gram-Карты</span> Telegram</span>
                 <img src="img/Card.jpg" alt="Card" class="card-img img-left" id="CardImg">
                 <span class="card-price">Цена: <span class="blue gill">0.20 gram</span></span>
                 <span class="card-note"><span class="blue">0.1</span> gram вам вернутся</span>
-            </article>
+            </a>
 
-            <article class="card card-white reveal">
+            <a class="card card-white reveal" href="https://t.me/MoneysXab" target="_blank" rel="noopener">
                 <span class="card-title"><span class="blue">Бот</span>-Рассылка по чатам</span>
                 <img src="img/Bot.jpg" alt="Bot" class="card-img img-left">
                 <span class="card-price">Цена: <span class="blue gill">0.4 usdt/час</span></span>
                 <span class="card-note">Автоматика</span>
-            </article>
+            </a>
 
         </section>
 
         <section class="column column-right">
 
-            <article class="card card-gray reveal">
+            <a class="card card-gray reveal" href="https://t.me/MoneysXab" target="_blank" rel="noopener">
                 <span class="card-title">Создание веб-сайтов <span class="blue">Frontend</span></span>
                 <img src="img/Laptop.jpg" alt="Laptop" class="card-img img-right">
                 <span class="card-price">Цена: <span class="blue">обговорим</span></span>
                 <span class="card-note">От <span class="blue">400-4000</span> руб/$/Gram</span>
-            </article>
+            </a>
 
         </section>
 
     </main>
+
+    <section class="page-section" id="portfolio">
+        <h2>Портфолио</h2>
+        <div class="works">
+            <a class="work reveal" href="https://egg631990-arch.github.io/Car/" target="_blank" rel="noopener">
+                <img src="img/Work1.png" alt="Work1">
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <a class="footer-button" href="https://t.me/MoneysXab" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M21.9 4.3 18.6 19.6c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.3-8.4c.4-.4-.1-.6-.6-.2L6.1 13.1 1.2 11.6c-1.1-.3-1.1-1 .2-1.6L20.500 2.700c.9-.3 1.700.2 1.400 1.600Z"/>
+            </svg>
+            <span>Написать в Telegram</span>
+        </a>
+        <button class="footer-link" type="button" data-open="privacy">Политика конфиденциальности</button>
+        <span class="footer-copy">© 2026 MoneysXab</span>
+    </footer>
+
+    <dialog id="privacy" class="privacy">
+        <div class="privacy-box">
+            <button class="privacy-close" type="button" aria-label="Закрыть">×</button>
+            <h3>Политика конфиденциальности</h3>
+            <p class="privacy-date">Последнее обновление: 1 ноября 2026</p>
+
+            <h4>1. Общие положения</h4>
+            <p>Настоящая политика describes, как обрабатываются данные посетителей сайта-портфолио. Используя сайт, вы соглашаетесь с её условиями.</p>
+
+            <h4>2. Какие данные собираются</h4>
+            <p>Сайт не содержит форм регистрации и оплаты и не собирает персональные данные автоматически. Сайт не использует файлы cookie и сервисы аналитики.</p>
+
+            <h4>3. Связь через Telegram</h4>
+            <p>При нажатии на кнопки связи вы переходите в Telegram. Данные, которые вы отправляете в личных сообщениях (имя, username, текст обращения), я получаю только в рамках диалога и использую исключительно для ответа на ваш запрос и выполнения заказа.</p>
+
+            <h4>4. Передача третьим лицам</h4>
+            <p>Ваши данные не продаются и не передаются третьим лицам, кроме случаев, предусмотренных законом. Обработка сообщений в Telegram регулируется политикой конфиденциальности самого Telegram.</p>
+
+            <h4>5. Хранение и удаление</h4>
+            <p>Переписка хранится столько, сколько необходимо для выполнения заказа. Вы можете в любой момент попросить удалить вашу переписку и данные, написав в Telegram.</p>
+
+            <h4>6. Внешние ссылки</h4>
+            <p>Сайт содержит ссылки на сторонние ресурсы, в том числе на работы из портфолио. За политику конфиденциальности этих ресурсов я ответственности не несу.</p>
+
+            <h4>7. Изменения</h4>
+            <p>Политика может обновляться. Актуальная версия всегда доступна на этом сайте.</p>
+
+            <h4>8. Контакты</h4>
+            <p>По любым вопросам о данных: <a href="https://t.me/MoneysXab" target="_blank" rel="noopener">t.me/MoneysXab</a></p>
+        </div>
+    </dialog>
 
     <script src="script.js"></script>
 </body>
